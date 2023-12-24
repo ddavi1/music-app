@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Music App</h1>
+        <form id="musicForm">
+            <div class="form-group">
+                <label for="artistInput">Artist</label>
+                <input type="text" class="form-control" id="artistInput" placeholder="Enter artist">
+            </div>
+            <div class="form-group">
+                <label for="musicInput">Music</label>
+                <input type="text" class="form-control" id="musicInput" placeholder="Enter music">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Music</button>
+        </form>
+
+        <hr>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Artist</th>
+                    <th>Music</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="musicTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
